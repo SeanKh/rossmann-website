@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "projects": "Loyihalar",
+    "contact": "Bog'lanish"
+  },
+  "hero": {
+    "title": "Texnologiyalar orqali biznesni rivojlantiramiz",
+    "subtitle": "Zamonaviy dasturiy ta'minot va raqamli transformatsiya.",
+    "button": "Boshlash"
+  }
+}

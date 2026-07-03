@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Empowering Businesses Through Technology",
+    "subtitle": "Innovative software development and digital transformation.",
+    "button": "Get Started"
+  }
+}

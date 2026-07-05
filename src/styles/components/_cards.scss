@@ -1,0 +1,19 @@
+.card {
+
+  background: white;
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+
+  padding: 35px;
+
+  transition: .3s;
+
+}
+
+.card:hover {
+
+  transform: translateY(-8px);
+
+}

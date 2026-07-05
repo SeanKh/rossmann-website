@@ -1,0 +1,35 @@
+<section class="technologies">
+
+  <div class="container">
+
+    <div class="section-header">
+
+            <span class="section-tag">
+                TECHNOLOGIES
+            </span>
+
+      <h2>
+        Technologies We Master
+      </h2>
+
+    </div>
+
+    <div class="tech-grid">
+
+      @for (tech of technologies; track tech.name) {
+
+      <div class="tech-card">
+
+        <i [class]="tech.icon"></i>
+
+        <span>{{ tech.name }}</span>
+
+      </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

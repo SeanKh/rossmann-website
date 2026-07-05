@@ -1,0 +1,29 @@
+.why-us {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+.stat-card h3 {
+  font-size: 42px;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.stat-card p {
+  color: #666;
+}

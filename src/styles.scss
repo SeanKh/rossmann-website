@@ -1,59 +1,12 @@
-@import "@fortawesome/fontawesome-free/css/all.min.css";
+@use "styles/abstracts/variables";
 
-:root {
+@use "styles/base/reset";
+@use "styles/base/typography";
 
-    --primary: #0057B8;
-    --secondary: #0099FF;
-    --accent: #00C896;
+@use "styles/layout/container";
 
-    --dark: #0F172A;
-    --gray: #64748B;
-    --light: #FFFFFF;
-    --background: #F8FAFC;
-
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-
-    font-family:Inter,Arial,sans-serif;
-    background:var(--background);
-    color:var(--dark);
-
-}
-
-.container{
-
-    width:min(1200px,92%);
-    margin:auto;
-
-}
-
-section{
-
-    padding:90px 0;
-
-}
-
-a{
-
-    text-decoration:none;
-    color:inherit;
-
-}
-
-img{
-
-    display:block;
-    max-width:100%;
-
-}
+@use "styles/components/buttons";
+@use "styles/components/badges";
+@use "styles/components/sections";
+@use "styles/components/cards";
+@use "styles/base/utilities";

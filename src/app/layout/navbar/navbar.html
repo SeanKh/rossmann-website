@@ -1,23 +1,37 @@
 <header class="navbar">
+
   <div class="container">
-    <a routerLink="/" class="logo">
+
+    <a href="" class="logo" (click)="scrollToSection($event, 'home')">
       <span class="logo-text">ROSSMANN</span>
     </a>
 
     <nav class="nav-links">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-      <a routerLink="/services" routerLinkActive="active">Services</a>
-      <a routerLink="/projects" routerLinkActive="active">Projects</a>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+
+      <a href="" (click)="scrollToSection($event, 'home')">
+        {{ 'navbar.home' | transloco }}
+      </a>
+
+      <a href="" (click)="scrollToSection($event, 'hero')">
+        {{ 'navbar.about' | transloco }}
+      </a>
+
+      <a href="" (click)="scrollToSection($event, 'services')">
+        {{ 'navbar.services' | transloco }}
+      </a>
+
+      <a href="" (click)="scrollToSection($event, 'projects')">
+        {{ 'navbar.projects' | transloco }}
+      </a>
+
+      <a routerLink="/contact" routerLinkActive="active">
+        {{ 'navbar.contact' | transloco }}
+      </a>
+
     </nav>
 
-    <div class="actions">
-      <select>
-        <option value="en">EN</option>
-        <option value="ru">RU</option>
-        <option value="uz">UZ</option>
-      </select>
-    </div>
+    <app-language-switcher></app-language-switcher>
+
   </div>
+
 </header>

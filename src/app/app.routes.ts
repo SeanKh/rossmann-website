@@ -7,16 +7,6 @@ export const routes: Routes = [
       import('./features/home/home').then(m => m.Home)
   },
   {
-    path: 'about',
-    loadComponent: () =>
-      import('./features/about/about').then(m => m.About)
-  },
-  {
-    path: 'services',
-    loadComponent: () =>
-      import('./features/services/services').then(m => m.Services)
-  },
-  {
     path: 'projects',
     loadComponent: () =>
       import('./features/projects/projects').then(m => m.Projects)

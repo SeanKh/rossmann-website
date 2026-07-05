@@ -1,1 +1,11 @@
-<p>language-switcher works!</p>
+<select
+  [(ngModel)]="language"
+  (change)="changeLanguage()">
+
+  <option value="en">🇬🇧 English</option>
+
+  <option value="ru">🇷🇺 Русский</option>
+
+  <option value="uz">🇺🇿 O'zbek</option>
+
+</select>

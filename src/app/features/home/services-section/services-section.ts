@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './services-section.html',
-  styleUrl: './services-section.scss',
+  styleUrl: './services-section.scss'
 })
-export class ServicesSection {}
+export class ServicesSection {
+
+  scrollTo(id: string) {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
+}

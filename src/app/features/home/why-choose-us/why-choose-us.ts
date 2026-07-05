@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './why-choose-us.html',
-  styleUrl: './why-choose-us.scss',
+  styleUrl: './why-choose-us.scss'
 })
 export class WhyChooseUs {}

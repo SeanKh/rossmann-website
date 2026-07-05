@@ -10,3 +10,16 @@
 @use "styles/components/sections";
 @use "styles/components/cards";
 @use "styles/base/utilities";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero,
+.services,
+.why-us,
+.technologies,
+.projects,
+.contact {
+    padding: 120px 0;
+}

@@ -1,20 +1,11 @@
-import { Component, inject } from '@angular/core';
-import {
-  Router,
-  RouterLink,
-  RouterLinkActive
-} from '@angular/router';
-
+import { Component } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
-
 import { LanguageSwitcher } from '../language-switcher/language-switcher';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
   imports: [
-    RouterLink,
-    RouterLinkActive,
     TranslocoPipe,
     LanguageSwitcher
   ],
@@ -23,33 +14,12 @@ import { LanguageSwitcher } from '../language-switcher/language-switcher';
 })
 export class Navbar {
 
-  private router = inject(Router);
+  scrollTo(id: string): void {
 
-  scrollToSection(event: Event, id: string): void {
-
-    event.preventDefault();
-
-    const scroll = () => {
-      if (id === 'home') {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      } else {
-        document.getElementById(id)?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    };
-
-    if (this.router.url !== '/') {
-      this.router.navigate(['/']).then(() => {
-        setTimeout(scroll, 100);
-      });
-    } else {
-      scroll();
-    }
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
 
   }
 

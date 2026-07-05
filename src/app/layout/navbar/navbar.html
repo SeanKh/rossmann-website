@@ -2,29 +2,33 @@
 
   <div class="container">
 
-    <a href="" class="logo" (click)="scrollToSection($event, 'home')">
+    <a class="logo" (click)="scrollTo('hero')">
       <span class="logo-text">ROSSMANN</span>
     </a>
 
     <nav class="nav-links">
 
-      <a href="" (click)="scrollToSection($event, 'home')">
+      <a (click)="scrollTo('hero')">
         {{ 'navbar.home' | transloco }}
       </a>
 
-      <a href="" (click)="scrollToSection($event, 'hero')">
-        {{ 'navbar.about' | transloco }}
-      </a>
-
-      <a href="" (click)="scrollToSection($event, 'services')">
+      <a (click)="scrollTo('services')">
         {{ 'navbar.services' | transloco }}
       </a>
 
-      <a href="" (click)="scrollToSection($event, 'projects')">
+      <a (click)="scrollTo('why-us')">
+        {{ 'navbar.about' | transloco }}
+      </a>
+
+      <a (click)="scrollTo('technologies')">
+        Technologies
+      </a>
+
+      <a (click)="scrollTo('projects')">
         {{ 'navbar.projects' | transloco }}
       </a>
 
-      <a routerLink="/contact" routerLinkActive="active">
+      <a (click)="scrollTo('contact')">
         {{ 'navbar.contact' | transloco }}
       </a>
 

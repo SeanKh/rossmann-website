@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { TranslocoPipe } from '@jsverse/transloco';
+
 import { Hero } from './hero/hero';
 import { ServicesSection } from './services-section/services-section';
 import { WhyChooseUs } from './why-choose-us/why-choose-us';
 import { Technologies } from './technologies/technologies';
+
+import { Projects } from '../projects/projects';
+import { Contact } from '../contact/contact';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +15,9 @@ import { Technologies } from './technologies/technologies';
     Hero,
     ServicesSection,
     WhyChooseUs,
-    Technologies
+    Technologies,
+    Projects,
+    Contact
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss'

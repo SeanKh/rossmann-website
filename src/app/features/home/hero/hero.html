@@ -18,19 +18,39 @@
       </p>
 
       <div class="hero-buttons">
-        <a routerLink="/contact" class="btn btn-primary">
+        <a class="btn btn-primary" (click)="scrollTo('contact')">
           Contact Us
         </a>
 
-        <a routerLink="/services" class="btn btn-outline">
+        <a class="btn btn-outline" (click)="scrollTo('services')">
           Our Services
         </a>
       </div>
 
+      <div class="hero-stats">
+
+        <div class="stat-card">
+          <h3>50+</h3>
+          <span>Projects Delivered</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>10+</h3>
+          <span>Years Experience</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>24/7</h3>
+          <span>Support</span>
+        </div>
+
+      </div>
     </div>
 
     <div class="hero-image">
-      <h2>🚀</h2>
+      <img
+        src="assets/images/undraw_build-mode_aa78.svg"
+        alt="Rossmann Software Development">
     </div>
 
   </div>

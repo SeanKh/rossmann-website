@@ -113,5 +113,12 @@
       "title": "AI Business Assistant",
       "description": "An AI-powered assistant for automating workflows and improving customer support."
     }
+  },
+  "footer": {
+    "description": "Building modern software, AI and cloud solutions that help businesses grow through innovation and technology.",
+    "company": "Company",
+    "services": "Services",
+    "contact": "Contact",
+    "rights": "All rights reserved."
   }
 }

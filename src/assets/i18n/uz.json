@@ -116,5 +116,12 @@
       "title": "Bulut infratuzilmasini modernizatsiya qilish",
       "description": "Eski infratuzilmani AWS platformasiga CI/CD avtomatlashtirilgan jarayonlari bilan ko'chirish."
     }
+  },
+  "footer": {
+    "description": "Biz biznes rivojlanishiga yordam beruvchi zamonaviy dasturiy ta'minot, AI va bulutli yechimlarni yaratamiz.",
+    "company": "Kompaniya",
+    "services": "Xizmatlar",
+    "contact": "Aloqa",
+    "rights": "Barcha huquqlar himoyalangan."
   }
 }

@@ -9,38 +9,37 @@
         <h2>ROSSMANN</h2>
 
         <p>
-          Building modern software, AI and cloud solutions that help
-          businesses grow through innovation and technology.
+          {{ 'footer.description' | transloco }}
         </p>
 
       </div>
 
       <div>
 
-        <h3>Services</h3>
+        <h3>{{ 'footer.services' | transloco }}</h3>
 
         <ul>
 
           <li>
-            <a href="#services">
+            <a (click)="scrollTo('services')">
               Custom Software
             </a>
           </li>
 
           <li>
-            <a href="#services">
+            <a (click)="scrollTo('services')">
               AI Solutions
             </a>
           </li>
 
           <li>
-            <a href="#services">
+            <a (click)="scrollTo('services')">
               Cloud Services
             </a>
           </li>
 
           <li>
-            <a href="#services">
+            <a (click)="scrollTo('services')">
               IT Consulting
             </a>
           </li>
@@ -51,31 +50,37 @@
 
       <div>
 
-        <h3>Company</h3>
+        <h3>{{ 'footer.company' | transloco }}</h3>
 
         <ul>
 
           <li>
-            <a href="#hero">
-              Home
+            <a (click)="scrollTo('hero')">
+              {{ 'navbar.home' | transloco }}
             </a>
           </li>
 
           <li>
-            <a href="#about">
-              About
+            <a (click)="scrollTo('services')">
+              {{ 'navbar.services' | transloco }}
             </a>
           </li>
 
           <li>
-            <a href="#projects">
-              Projects
+            <a (click)="scrollTo('technologies')">
+              {{ 'navbar.technologies' | transloco }}
             </a>
           </li>
 
           <li>
-            <a href="#contact">
-              Contact
+            <a (click)="scrollTo('projects')">
+              {{ 'navbar.projects' | transloco }}
+            </a>
+          </li>
+
+          <li>
+            <a (click)="scrollTo('contact')">
+              {{ 'navbar.contact' | transloco }}
             </a>
           </li>
 
@@ -85,7 +90,7 @@
 
       <div>
 
-        <h3>Contact</h3>
+        <h3>{{ 'footer.contact' | transloco }}</h3>
 
         <ul>
 
@@ -102,6 +107,7 @@
               📞 +998 90 123 45 67
             </a>
           </li>
+
         </ul>
 
       </div>
@@ -111,7 +117,8 @@
     <div class="footer-bottom">
 
       <p>
-        © {{ currentYear }} Rossmann. All rights reserved.
+        © {{ currentYear }} Rossmann.
+        {{ 'footer.rights' | transloco }}
       </p>
 
     </div>

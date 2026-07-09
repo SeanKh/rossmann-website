@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject, AfterViewInit } from '@angular/core';
+import {
+  RouterLink
+} from '@angular/router';
+
 import { TranslocoPipe } from '@jsverse/transloco';
+
 import { LanguageSwitcher } from '../language-switcher/language-switcher';
 
 @Component({

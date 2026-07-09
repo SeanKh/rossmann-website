@@ -28,21 +28,44 @@
   }
 }
 
-.nav-links {
-  display: flex;
-  gap: 32px;
+.nav-links a {
 
-  a {
-    color: #222;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color .25s;
-  }
+  position: relative;
 
-  a:hover,
-  .active {
-    color: #0057b8;
-  }
+  text-decoration: none;
+
+}
+
+.nav-links a::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -6px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: #0057b8;
+
+  transition: .3s;
+
+}
+
+.nav-links a:hover::after {
+
+  width: 100%;
+
+}
+
+.active::after {
+
+  width: 100%;
+
 }
 
 .actions select {
@@ -51,4 +74,13 @@
   padding: 8px 12px;
   background: white;
   cursor: pointer;
+}
+
+.active {
+  color: #0057b8;
+  font-weight: 700;
+}
+
+.active::after {
+  width: 100%;
 }

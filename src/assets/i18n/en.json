@@ -88,5 +88,10 @@
       "title": "Long-Term Partnership",
       "description": "We work closely with clients to deliver solutions that continue creating value after launch."
     }
+  },
+  "technologies": {
+    "sectionTag": "TECHNOLOGIES",
+    "title": "Modern Technologies We Work With",
+    "description": "We use industry-leading technologies to build secure, scalable and high-performance software."
   }
 }

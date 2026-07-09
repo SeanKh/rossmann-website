@@ -88,5 +88,10 @@
       "title": "Uzoq muddatli hamkorlik",
       "description": "Biz mijozlar bilan uzoq muddatli hamkorlikni yo'lga qo'yamiz va loyiha ishga tushirilgandan keyin ham qo'llab-quvvatlaymiz."
     }
+  },
+  "technologies": {
+    "sectionTag": "TEXNOLOGIYALAR",
+    "title": "Biz foydalanadigan zamonaviy texnologiyalar",
+    "description": "Biz xavfsiz, kengaytiriladigan va yuqori unumdor dasturiy ta'minotni yaratishda yetakchi texnologiyalardan foydalanamiz."
   }
 }

@@ -4,6 +4,89 @@
     "about": "Biz haqimizda",
     "services": "Xizmatlar",
     "projects": "Loyihalar",
-    "contact": "Aloqa"
+    "technologies": "Texnologiyalar",
+    "contact": "Bog'lanish"
+  },
+  "hero": {
+    "tag": "Dasturiy ta'minot • Sun'iy intellekt • Bulutli yechimlar",
+
+    "title": "Rivojlanayotgan biznes uchun zamonaviy dasturiy yechimlarni yaratamiz",
+
+    "description": "Rossmann kompaniyalarga maxsus dasturiy ta'minot ishlab chiqish, bulutli texnologiyalar, korporativ yechimlar va sun'iy intellekt asosidagi ilovalar orqali raqamli transformatsiyani tezlashtirishga yordam beradi.",
+
+    "contactButton": "Biz bilan bog'laning",
+
+    "servicesButton": "Xizmatlarimiz",
+
+    "stats": {
+      "projectsValue": "50+",
+      "projectsLabel": "Bajarilgan loyihalar",
+
+      "experienceValue": "10+",
+      "experienceLabel": "Yillik tajriba",
+
+      "supportValue": "24/7",
+      "supportLabel": "Qo'llab-quvvatlash"
+    }
+  },
+  "services": {
+    "sectionTag": "Xizmatlarimiz",
+    "title": "Biz taqdim etadigan yechimlar",
+    "description": "Biz biznes maqsadlaringizga moslashtirilgan to'liq dasturiy ta'minot ishlab chiqish xizmatlarini taklif qilamiz.",
+
+    "custom": {
+      "title": "Maxsus dasturiy ta'minot",
+      "description": "Biznesingiz ehtiyojlariga mos veb, desktop va korporativ dasturlarni yaratamiz."
+    },
+
+    "web": {
+      "title": "Veb dasturlash",
+      "description": "Zamonaviy, tezkor va barcha qurilmalarga mos veb-ilovalarni ishlab chiqamiz."
+    },
+
+    "mobile": {
+      "title": "Mobil ilovalar",
+      "description": "Android va iOS uchun yuqori sifatli mobil ilovalarni yaratamiz."
+    },
+
+    "cloud": {
+      "title": "Bulutli yechimlar",
+      "description": "Azure va AWS platformalarida bulut infratuzilmasini yaratish va boshqarish."
+    },
+
+    "ai": {
+      "title": "Sun'iy intellekt va avtomatlashtirish",
+      "description": "AI va avtomatlashtirish texnologiyalari yordamida biznes samaradorligini oshiramiz."
+    },
+
+    "consulting": {
+      "title": "IT konsalting",
+      "description": "Texnologiyalarni tanlash, tizimlarni modernizatsiya qilish va raqamli rivojlanish bo'yicha maslahatlar beramiz."
+    }
+  },
+  "why": {
+    "sectionTag": "Nega Rossmann",
+    "title": "Nima uchun Rossmann",
+    "description": "Biz texnik tajriba, innovatsiyalar va biznesni tushunishni birlashtirib, haqiqiy natija beradigan dasturiy yechimlarni yaratamiz.",
+
+    "expertise": {
+      "title": "Tajribali jamoa",
+      "description": "Mutaxassislarimiz korporativ dasturlar, bulut texnologiyalari va AI bo'yicha katta tajribaga ega."
+    },
+
+    "performance": {
+      "title": "Yuqori samaradorlik",
+      "description": "Biz tezkor, ishonchli va kengaytiriladigan tizimlarni ishlab chiqamiz."
+    },
+
+    "security": {
+      "title": "Xavfsizlik birinchi o'rinda",
+      "description": "Axborot xavfsizligi standartlari ishlab chiqishning barcha bosqichlarida qo'llaniladi."
+    },
+
+    "partnership": {
+      "title": "Uzoq muddatli hamkorlik",
+      "description": "Biz mijozlar bilan uzoq muddatli hamkorlikni yo'lga qo'yamiz va loyiha ishga tushirilgandan keyin ham qo'llab-quvvatlaymiz."
+    }
   }
 }

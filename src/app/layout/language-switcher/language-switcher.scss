@@ -1,0 +1,41 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+
+  background: white;
+
+  transition: .25s ease;
+}
+
+.language-switcher:hover {
+  border-color: #0057b8;
+  box-shadow: 0 6px 18px rgba(0, 87, 184, .12);
+}
+
+.icon {
+  font-size: 18px;
+}
+
+select {
+  border: none;
+  background: transparent;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #374151;
+
+  cursor: pointer;
+
+  outline: none;
+}
+
+select option {
+  font-weight: 500;
+}

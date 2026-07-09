@@ -4,6 +4,89 @@
     "about": "About",
     "services": "Services",
     "projects": "Projects",
+    "technologies": "Technologies",
     "contact": "Contact"
+  },
+  "hero": {
+    "tag": "Software Development • AI • Cloud Solutions",
+
+    "title": "We Build Modern Software Solutions for Growing Businesses",
+
+    "description": "Rossmann helps organizations accelerate digital transformation through custom software development, cloud technologies, enterprise solutions and AI-powered applications.",
+
+    "contactButton": "Contact Us",
+
+    "servicesButton": "Our Services",
+
+    "stats": {
+      "projectsValue": "50+",
+      "projectsLabel": "Projects Delivered",
+
+      "experienceValue": "10+",
+      "experienceLabel": "Years Experience",
+
+      "supportValue": "24/7",
+      "supportLabel": "Support"
+    }
+  },
+  "services": {
+    "sectionTag": "Our Services",
+    "title": "Solutions We Deliver",
+    "description": "We provide end-to-end software development services tailored to your business goals.",
+
+    "custom": {
+      "title": "Custom Software Development",
+      "description": "Scalable web, desktop and enterprise applications built around your business."
+    },
+
+    "web": {
+      "title": "Web Development",
+      "description": "Modern, responsive and high-performance web applications using the latest technologies."
+    },
+
+    "mobile": {
+      "title": "Mobile Applications",
+      "description": "Native and cross-platform mobile apps delivering exceptional user experiences."
+    },
+
+    "cloud": {
+      "title": "Cloud Solutions",
+      "description": "Migration, deployment and management of cloud infrastructure on Azure and AWS."
+    },
+
+    "ai": {
+      "title": "AI & Automation",
+      "description": "Artificial intelligence, automation and machine learning solutions that improve productivity."
+    },
+
+    "consulting": {
+      "title": "IT Consulting",
+      "description": "Technology consulting to help organizations plan, modernize and scale their digital platforms."
+    }
+  },
+  "why": {
+    "sectionTag": "Why Rossmann",
+    "title": "Why Choose Rossmann",
+    "description": "We combine technical expertise, innovation and business understanding to build software that delivers measurable results.",
+
+    "expertise": {
+      "title": "Experienced Team",
+      "description": "Our engineers bring years of experience in enterprise software, cloud technologies and AI."
+    },
+
+    "performance": {
+      "title": "High Performance",
+      "description": "We build fast, scalable and reliable systems designed for long-term growth."
+    },
+
+    "security": {
+      "title": "Secure by Design",
+      "description": "Security best practices are integrated into every stage of development."
+    },
+
+    "partnership": {
+      "title": "Long-Term Partnership",
+      "description": "We work closely with clients to deliver solutions that continue creating value after launch."
+    }
   }
 }

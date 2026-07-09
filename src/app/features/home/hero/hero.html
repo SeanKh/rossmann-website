@@ -4,44 +4,42 @@
     <div class="hero-text">
 
       <span class="tag">
-        Software Development • AI • Cloud Solutions
+        {{ 'hero.tag' | transloco }}
       </span>
 
       <h1>
-        We Build Modern Software Solutions for Growing Businesses
+        {{ 'hero.title' | transloco }}
       </h1>
 
       <p>
-        Rossmann helps organizations accelerate digital transformation
-        through custom software development, cloud technologies,
-        enterprise solutions and AI-powered applications.
+        {{ 'hero.description' | transloco }}
       </p>
 
       <div class="hero-buttons">
         <a class="btn btn-primary" (click)="scrollTo('contact')">
-          Contact Us
+          {{ 'hero.contactButton' | transloco }}
         </a>
 
         <a class="btn btn-outline" (click)="scrollTo('services')">
-          Our Services
+          {{ 'hero.servicesButton' | transloco }}
         </a>
       </div>
 
       <div class="hero-stats">
 
         <div class="stat-card">
-          <h3>50+</h3>
-          <span>Projects Delivered</span>
+          <h3>{{ 'hero.stats.projectsValue' | transloco }}</h3>
+          <span>{{ 'hero.stats.projectsLabel' | transloco }}</span>
         </div>
 
         <div class="stat-card">
-          <h3>10+</h3>
-          <span>Years Experience</span>
+          <h3>{{ 'hero.stats.experienceValue' | transloco }}</h3>
+          <span>{{ 'hero.stats.experienceLabel' | transloco }}</span>
         </div>
 
         <div class="stat-card">
-          <h3>24/7</h3>
-          <span>Support</span>
+          <h3>{{ 'hero.stats.supportValue' | transloco }}</h3>
+          <span>{{ 'hero.stats.supportLabel' | transloco }}</span>
         </div>
 
       </div>

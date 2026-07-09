@@ -3,7 +3,25 @@
   <div class="container">
 
     <a class="logo" (click)="scrollTo('hero')">
-      <span class="logo-text">ROSSMANN</span>
+      <div class="logo-wrapper">
+
+        <div class="logo-icon">
+          R
+        </div>
+
+        <div>
+
+          <div class="logo-text">
+            ROSSMANN
+          </div>
+
+          <small>
+            Software Solutions
+          </small>
+
+        </div>
+
+      </div>
     </a>
 
     <nav class="nav-links">
@@ -21,7 +39,7 @@
       </a>
 
       <a (click)="scrollTo('technologies')">
-        Technologies
+        {{ 'navbar.technologies' | transloco }}
       </a>
 
       <a (click)="scrollTo('projects')">

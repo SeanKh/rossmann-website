@@ -3,100 +3,105 @@
   <div class="container">
 
     <div class="section-header">
-      <span class="section-tag">OUR SERVICES</span>
 
-      <h2>Technology Solutions That Drive Business Growth</h2>
+      <span class="section-tag">
+        {{ 'services.sectionTag' | transloco }}
+      </span>
+
+      <h2>
+        {{ 'services.title' | transloco }}
+      </h2>
 
       <p>
-        We design, build and scale digital products that help businesses
-        innovate faster and stay competitive.
+        {{ 'services.description' | transloco }}
       </p>
+
     </div>
 
     <div class="services-grid">
 
-      <div class="service-card card" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-icon">💻</div>
+      <div class="service-card">
 
-        <h3>Custom Software</h3>
+        <div class="icon">💻</div>
+
+        <h3>
+          {{ 'services.custom.title' | transloco }}
+        </h3>
 
         <p>
-          Enterprise software, CRM systems, internal platforms and business applications.
+          {{ 'services.custom.description' | transloco }}
         </p>
 
-        <a (click)="scrollTo('contact')">
-          Learn More →
-        </a>
       </div>
 
-      <div class="service-card card" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-icon">☁️</div>
+      <div class="service-card">
 
-        <h3>Cloud Solutions</h3>
+        <div class="icon">🌐</div>
+
+        <h3>
+          {{ 'services.web.title' | transloco }}
+        </h3>
 
         <p>
-          AWS, Azure, DevOps, Docker, Kubernetes and scalable cloud infrastructure.
+          {{ 'services.web.description' | transloco }}
         </p>
 
-        <a (click)="scrollTo('contact')">
-          Learn More →
-        </a>
       </div>
 
-      <div class="service-card card" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-icon">🤖</div>
+      <div class="service-card">
 
-        <h3>Artificial Intelligence</h3>
+        <div class="icon">📱</div>
+
+        <h3>
+          {{ 'services.mobile.title' | transloco }}
+        </h3>
 
         <p>
-          AI assistants, chatbots, automation, computer vision and LLM integrations.
+          {{ 'services.mobile.description' | transloco }}
         </p>
 
-        <a (click)="scrollTo('contact')">
-          Learn More →
-        </a>
       </div>
 
-      <div class="service-card card" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-icon">📱</div>
+      <div class="service-card">
 
-        <h3>Mobile Apps</h3>
+        <div class="icon">☁️</div>
+
+        <h3>
+          {{ 'services.cloud.title' | transloco }}
+        </h3>
 
         <p>
-          Native and cross-platform applications for Android and iOS.
+          {{ 'services.cloud.description' | transloco }}
         </p>
 
-        <a (click)="scrollTo('contact')">
-          Learn More →
-        </a>
       </div>
 
-      <div class="service-card card" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-icon">🔒</div>
+      <div class="service-card">
 
-        <h3>Cybersecurity</h3>
+        <div class="icon">🤖</div>
+
+        <h3>
+          {{ 'services.ai.title' | transloco }}
+        </h3>
 
         <p>
-          Secure architectures, penetration testing and compliance solutions.
+          {{ 'services.ai.description' | transloco }}
         </p>
 
-        <a (click)="scrollTo('contact')">
-          Learn More →
-        </a>
       </div>
 
-      <div class="service-card card" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-icon">📊</div>
+      <div class="service-card">
 
-        <h3>IT Consulting</h3>
+        <div class="icon">🧠</div>
+
+        <h3>
+          {{ 'services.consulting.title' | transloco }}
+        </h3>
 
         <p>
-          Technology strategy, digital transformation and software architecture.
+          {{ 'services.consulting.description' | transloco }}
         </p>
 
-        <a (click)="scrollTo('contact')">
-          Learn More →
-        </a>
       </div>
 
     </div>

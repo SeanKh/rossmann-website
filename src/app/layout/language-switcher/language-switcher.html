@@ -1,11 +1,15 @@
-<select
-  [(ngModel)]="language"
-  (change)="changeLanguage()">
+<div class="language-switcher">
 
-  <option value="en">🇬🇧 English</option>
+  <span class="icon">🌐</span>
 
-  <option value="ru">🇷🇺 Русский</option>
+  <select
+    [(ngModel)]="language"
+    (change)="changeLanguage()">
 
-  <option value="uz">🇺🇿 O'zbek</option>
+    <option value="en">English</option>
+    <option value="ru">Русский</option>
+    <option value="uz">O'zbek</option>
 
-</select>
+  </select>
+
+</div>

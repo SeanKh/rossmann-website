@@ -5,7 +5,8 @@
     "services": "Services",
     "projects": "Projects",
     "technologies": "Technologies",
-    "contact": "Contact"
+    "contact": "Contact",
+    "companySubtitle": "Software Solutions"
   },
   "hero": {
     "tag": "Software Development • AI • Cloud Solutions",
@@ -95,23 +96,26 @@
     "description": "We use industry-leading technologies to build secure, scalable and high-performance software."
   },
   "projects": {
-    "sectionTag": "OUR PROJECTS",
-    "title": "Solutions We've Delivered",
-    "description": "A selection of software solutions developed for clients across multiple industries.",
+    "sectionTag": "НАШИ ПРОЕКТЫ",
+    "title": "Реализованные решения",
+    "description": "От корпоративных систем до AI-приложений — мы создаём программное обеспечение, которое решает реальные бизнес-задачи.",
 
-    "erp": {
-      "title": "Enterprise ERP Platform",
-      "description": "A scalable ERP system for managing finance, HR, inventory, and business operations."
-    },
-
-    "healthcare": {
-      "title": "Healthcare Management System",
-      "description": "Digital platform for clinics featuring appointments, patient records, and reporting."
+    "enterprise": {
+      "category": "Корпоративное ПО",
+      "title": "Платформа управления предприятием",
+      "description": "ERP-система для автоматизации внутренних процессов и повышения эффективности бизнеса."
     },
 
     "ai": {
-      "title": "AI Business Assistant",
-      "description": "An AI-powered assistant for automating workflows and improving customer support."
+      "category": "Искусственный интеллект",
+      "title": "AI-помощник для клиентов",
+      "description": "Интеллектуальный чат-бот на базе больших языковых моделей, сокративший нагрузку на службу поддержки на 60%."
+    },
+
+    "cloud": {
+      "category": "Миграция в облако",
+      "title": "Модернизация облачной инфраструктуры",
+      "description": "Перенос устаревшей инфраструктуры в AWS с автоматизированными CI/CD-процессами."
     }
   },
   "footer": {

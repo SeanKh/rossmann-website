@@ -1,8 +1,4 @@
-import { Component, inject, AfterViewInit } from '@angular/core';
-import {
-  RouterLink
-} from '@angular/router';
-
+import { Component } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 import { LanguageSwitcher } from '../language-switcher/language-switcher';
@@ -21,9 +17,17 @@ export class Navbar {
 
   scrollTo(id: string): void {
 
-    document.getElementById(id)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+    const element = document.getElementById(id);
+
+    if (!element) {
+      return;
+    }
+
+    const offset = 80;
+
+    window.scrollTo({
+      top: element.offsetTop - offset,
+      behavior: 'smooth'
     });
 
   }

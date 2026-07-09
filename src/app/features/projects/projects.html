@@ -5,16 +5,15 @@
     <div class="section-header">
 
       <span class="section-tag">
-        FEATURED PROJECTS
+        {{ 'projects.sectionTag' | transloco }}
       </span>
 
       <h2>
-        Solutions We've Delivered
+        {{ 'projects.title' | transloco }}
       </h2>
 
       <p>
-        From enterprise systems to AI-powered applications, we build software
-        that solves real business challenges.
+        {{ 'projects.description' | transloco }}
       </p>
 
     </div>
@@ -29,22 +28,26 @@
 
         <div class="project-content">
 
-          <span>Enterprise Software</span>
+          <span>
+            {{ 'projects.enterprise.category' | transloco }}
+          </span>
 
           <h3>
-            Enterprise Management Platform
+            {{ 'projects.enterprise.title' | transloco }}
           </h3>
 
           <p>
-            Custom ERP platform helping companies automate internal workflows
-            and improve productivity.
+            {{ 'projects.enterprise.description' | transloco }}
           </p>
 
         </div>
 
       </div>
 
-      <div class="project-card card" data-aos="fade-up">
+      <div
+        class="project-card card"
+        data-aos="fade-up"
+        data-aos-delay="100">
 
         <img
           src="assets/images/projects/project2.jpg"
@@ -52,22 +55,26 @@
 
         <div class="project-content">
 
-          <span>Artificial Intelligence</span>
+          <span>
+            {{ 'projects.ai.category' | transloco }}
+          </span>
 
           <h3>
-            AI Customer Assistant
+            {{ 'projects.ai.title' | transloco }}
           </h3>
 
           <p>
-            Intelligent chatbot powered by large language models that reduced
-            support workload by 60%.
+            {{ 'projects.ai.description' | transloco }}
           </p>
 
         </div>
 
       </div>
 
-      <div class="project-card card" data-aos="fade-up">
+      <div
+        class="project-card card"
+        data-aos="fade-up"
+        data-aos-delay="200">
 
         <img
           src="assets/images/projects/project3.jpg"
@@ -75,14 +82,16 @@
 
         <div class="project-content">
 
-          <span>Cloud Migration</span>
+          <span>
+            {{ 'projects.cloud.category' | transloco }}
+          </span>
 
           <h3>
-            Cloud Infrastructure Modernization
+            {{ 'projects.cloud.title' | transloco }}
           </h3>
 
           <p>
-            Migrated legacy infrastructure to AWS with automated CI/CD pipelines.
+            {{ 'projects.cloud.description' | transloco }}
           </p>
 
         </div>

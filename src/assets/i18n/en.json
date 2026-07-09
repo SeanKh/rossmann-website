@@ -93,5 +93,25 @@
     "sectionTag": "TECHNOLOGIES",
     "title": "Modern Technologies We Work With",
     "description": "We use industry-leading technologies to build secure, scalable and high-performance software."
+  },
+  "projects": {
+    "sectionTag": "OUR PROJECTS",
+    "title": "Solutions We've Delivered",
+    "description": "A selection of software solutions developed for clients across multiple industries.",
+
+    "erp": {
+      "title": "Enterprise ERP Platform",
+      "description": "A scalable ERP system for managing finance, HR, inventory, and business operations."
+    },
+
+    "healthcare": {
+      "title": "Healthcare Management System",
+      "description": "Digital platform for clinics featuring appointments, patient records, and reporting."
+    },
+
+    "ai": {
+      "title": "AI Business Assistant",
+      "description": "An AI-powered assistant for automating workflows and improving customer support."
+    }
   }
 }

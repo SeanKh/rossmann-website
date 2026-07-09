@@ -93,5 +93,28 @@
     "sectionTag": "TEXNOLOGIYALAR",
     "title": "Biz foydalanadigan zamonaviy texnologiyalar",
     "description": "Biz xavfsiz, kengaytiriladigan va yuqori unumdor dasturiy ta'minotni yaratishda yetakchi texnologiyalardan foydalanamiz."
+  },
+  "projects": {
+    "sectionTag": "LOYIHALAR",
+    "title": "Biz amalga oshirgan yechimlar",
+    "description": "Korporativ tizimlardan AI ilovalarigacha — biz biznes muammolarini hal qiladigan dasturiy yechimlarni ishlab chiqamiz.",
+
+    "enterprise": {
+      "category": "Korporativ dasturiy ta'minot",
+      "title": "Korxona boshqaruv platformasi",
+      "description": "Ichki biznes jarayonlarini avtomatlashtirish va samaradorlikni oshirish uchun ERP platformasi."
+    },
+
+    "ai": {
+      "category": "Sun'iy intellekt",
+      "title": "AI mijoz yordamchisi",
+      "description": "Katta til modellari asosidagi chatbot, qo'llab-quvvatlash xizmatining yuklamasini 60% ga kamaytirdi."
+    },
+
+    "cloud": {
+      "category": "Bulutga migratsiya",
+      "title": "Bulut infratuzilmasini modernizatsiya qilish",
+      "description": "Eski infratuzilmani AWS platformasiga CI/CD avtomatlashtirilgan jarayonlari bilan ko'chirish."
+    }
   }
 }

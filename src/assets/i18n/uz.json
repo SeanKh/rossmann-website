@@ -123,5 +123,38 @@
     "services": "Xizmatlar",
     "contact": "Aloqa",
     "rights": "Barcha huquqlar himoyalangan."
+  },
+  "contact": {
+    "sectionTag": "BIZ BILAN BOG'LANING",
+    "title": "Keling, birgalikda ajoyib loyihani yaratamiz",
+    "description": "Loyihangiz bormi? Biz uni muhokama qilishdan mamnun bo'lamiz. Bizga xabar yuboring va imkon qadar tezroq siz bilan bog'lanamiz.",
+
+    "form": {
+      "name": "Ism",
+      "email": "Elektron pochta",
+      "company": "Kompaniya",
+      "subject": "Mavzu",
+      "message": "Xabar",
+      "submit": "Xabar yuborish"
+    },
+
+    "validation": {
+      "name": "Iltimos, ismingizni kiriting.",
+      "email": "Iltimos, to'g'ri elektron pochta manzilini kiriting.",
+      "message": "Xabar kamida 10 ta belgidan iborat bo'lishi kerak."
+    },
+
+    "info": {
+      "addressTitle": "Manzil",
+      "emailTitle": "Elektron pochta",
+      "phoneTitle": "Telefon",
+      "hoursTitle": "Ish vaqti",
+
+      "address": "Toshkent, O'zbekiston",
+      "email": "info@rossmann.uz",
+      "phone": "+998 90 123 45 67",
+      "days": "Dushanba – Juma",
+      "hours": "09:00 – 18:00"
+    }
   }
 }

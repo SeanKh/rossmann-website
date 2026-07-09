@@ -5,10 +5,15 @@ import {
   Validators
 } from '@angular/forms';
 
+import { TranslocoPipe } from '@jsverse/transloco';
+
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [
+    ReactiveFormsModule,
+    TranslocoPipe
+  ],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })

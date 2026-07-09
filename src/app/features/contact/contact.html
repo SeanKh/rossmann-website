@@ -3,14 +3,19 @@
   <div class="container">
 
     <div class="section-header">
-      <span class="section-tag">CONTACT US</span>
 
-      <h2>Let's Build Something Great Together</h2>
+      <span class="section-tag">
+        {{ 'contact.sectionTag' | transloco }}
+      </span>
+
+      <h2>
+        {{ 'contact.title' | transloco }}
+      </h2>
 
       <p>
-        Have a project in mind? We'd love to hear about it.
-        Send us a message and we'll get back to you as soon as possible.
+        {{ 'contact.description' | transloco }}
       </p>
+
     </div>
 
     <div class="contact-wrapper">
@@ -22,8 +27,8 @@
           <div class="icon">📍</div>
 
           <div>
-            <h3>Address</h3>
-            <p>Tashkent, Uzbekistan</p>
+            <h3>{{ 'contact.info.addressTitle' | transloco }}</h3>
+            <p>{{ 'contact.info.address' | transloco }}</p>
           </div>
 
         </div>
@@ -33,8 +38,8 @@
           <div class="icon">📧</div>
 
           <div>
-            <h3>Email</h3>
-            <p>info@rossmann.uz</p>
+            <h3>{{ 'contact.info.emailTitle' | transloco }}</h3>
+            <p>{{ 'contact.info.email' | transloco }}</p>
           </div>
 
         </div>
@@ -44,8 +49,8 @@
           <div class="icon">📞</div>
 
           <div>
-            <h3>Phone</h3>
-            <p>+998 90 123 45 67</p>
+            <h3>{{ 'contact.info.phoneTitle' | transloco }}</h3>
+            <p>{{ 'contact.info.phone' | transloco }}</p>
           </div>
 
         </div>
@@ -55,9 +60,9 @@
           <div class="icon">🕒</div>
 
           <div>
-            <h3>Working Hours</h3>
-            <p>Monday – Friday</p>
-            <p>09:00 – 18:00</p>
+            <h3>{{ 'contact.info.hoursTitle' | transloco }}</h3>
+            <p>{{ 'contact.info.days' | transloco }}</p>
+            <p>{{ 'contact.info.hours' | transloco }}</p>
           </div>
 
         </div>
@@ -71,7 +76,7 @@
 
         <div class="form-group">
 
-          <label>Name *</label>
+          <label>{{ 'contact.form.name' | transloco }} *</label>
 
           <input
             type="text"
@@ -79,7 +84,9 @@
 
           @if(submitted && contactForm.controls.name.invalid){
 
-          <small>Please enter your name.</small>
+          <small>
+            {{ 'contact.validation.name' | transloco }}
+          </small>
 
           }
 
@@ -87,7 +94,7 @@
 
         <div class="form-group">
 
-          <label>Email *</label>
+          <label>{{ 'contact.form.email' | transloco }} *</label>
 
           <input
             type="email"
@@ -95,7 +102,9 @@
 
           @if(submitted && contactForm.controls.email.invalid){
 
-          <small>Please enter a valid email.</small>
+          <small>
+            {{ 'contact.validation.email' | transloco }}
+          </small>
 
           }
 
@@ -103,7 +112,7 @@
 
         <div class="form-group">
 
-          <label>Company</label>
+          <label>{{ 'contact.form.company' | transloco }}</label>
 
           <input
             type="text"
@@ -113,7 +122,7 @@
 
         <div class="form-group">
 
-          <label>Subject</label>
+          <label>{{ 'contact.form.subject' | transloco }}</label>
 
           <input
             type="text"
@@ -123,16 +132,17 @@
 
         <div class="form-group full-width">
 
-          <label>Message *</label>
+          <label>{{ 'contact.form.message' | transloco }} *</label>
 
           <textarea
             rows="6"
-            formControlName="message"></textarea>
+            formControlName="message">
+          </textarea>
 
           @if(submitted && contactForm.controls.message.invalid){
 
           <small>
-            Please enter at least 10 characters.
+            {{ 'contact.validation.message' | transloco }}
           </small>
 
           }
@@ -143,7 +153,7 @@
           type="submit"
           class="btn btn-primary">
 
-          Send Message
+          {{ 'contact.form.submit' | transloco }}
 
         </button>
 

@@ -120,5 +120,38 @@
     "services": "Services",
     "contact": "Contact",
     "rights": "All rights reserved."
+  },
+  "contact": {
+    "sectionTag": "CONTACT US",
+    "title": "Let's Build Something Great Together",
+    "description": "Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you as soon as possible.",
+
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+
+    "validation": {
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email.",
+      "message": "Please enter at least 10 characters."
+    },
+
+    "info": {
+      "addressTitle": "Address",
+      "emailTitle": "Email",
+      "phoneTitle": "Phone",
+      "hoursTitle": "Working Hours",
+
+      "address": "Tashkent, Uzbekistan",
+      "email": "info@rossmann.uz",
+      "phone": "+998 90 123 45 67",
+      "days": "Monday – Friday",
+      "hours": "09:00 – 18:00"
+    }
   }
 }

@@ -1,15 +1,24 @@
 <div class="language-switcher">
 
-  <span class="icon">🌐</span>
+  <button
+    type="button"
+    [class.active]="activeLang() === 'en'"
+    (click)="changeLanguage('en')">
+    EN
+  </button>
 
-  <select
-    [(ngModel)]="language"
-    (change)="changeLanguage()">
+  <button
+    type="button"
+    [class.active]="activeLang() === 'ru'"
+    (click)="changeLanguage('ru')">
+    RU
+  </button>
 
-    <option value="en">English</option>
-    <option value="ru">Русский</option>
-    <option value="uz">O'zbek</option>
-
-  </select>
+  <button
+    type="button"
+    [class.active]="activeLang() === 'uz'"
+    (click)="changeLanguage('uz')">
+    UZ
+  </button>
 
 </div>

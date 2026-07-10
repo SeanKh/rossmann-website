@@ -1,26 +1,25 @@
-import { Component, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-
-import { LanguageService } from '../../core/services/language.service';
+import { Component, inject, signal } from '@angular/core';
+import { TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-language-switcher',
   standalone: true,
-  imports: [FormsModule],
   templateUrl: './language-switcher.html',
   styleUrl: './language-switcher.scss'
 })
 export class LanguageSwitcher {
 
-  languageService = inject(LanguageService);
+  private transloco = inject(TranslocoService);
 
-  language = this.languageService.currentLanguage;
+  activeLang = signal(this.transloco.getActiveLang());
 
-  changeLanguage() {
+  changeLanguage(lang: string): void {
 
-    this.languageService.setLanguage(
-      this.language as 'en' | 'ru' | 'uz'
-    );
+    this.transloco.setActiveLang(lang);
+
+    localStorage.setItem('lang', lang);
+
+    this.activeLang.set(lang);
 
   }
 

@@ -1,15 +1,15 @@
 .contact {
   padding: 120px 0;
-  background: #f8fbff;
+  background: var(--bg);
+  transition: background .35s;
 }
 
 .contact-wrapper {
   margin-top: 70px;
 
   display: grid;
-  grid-template-columns: 380px 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 60px;
-  align-items: start;
 }
 
 .contact-info {
@@ -20,65 +20,95 @@
 
 .info-card {
   display: flex;
-  gap: 20px;
   align-items: flex-start;
+  gap: 18px;
 
-  background: white;
-  padding: 28px;
+  padding: 24px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
   border-radius: 18px;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  box-shadow: var(--shadow);
 
-  transition: .3s ease;
+  transition:
+    background .35s,
+    border-color .35s,
+    box-shadow .35s,
+    transform .3s;
 }
 
 .info-card:hover {
   transform: translateY(-6px);
-
-  box-shadow: 0 20px 40px rgba(0,0,0,.12);
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
 
-  border-radius: 16px;
+  border-radius: 14px;
 
-  background: #0057b8;
-  color: white;
+  background: var(--tag-bg);
+  color: var(--primary);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 28px;
+  font-size: 24px;
 
   flex-shrink: 0;
+
+  transition:
+    background .35s,
+    color .35s;
 }
 
 .info-card h3 {
-  margin-bottom: 10px;
-  color: #111827;
+  margin: 0 0 8px;
+
+  color: var(--text);
+
+  font-size: 18px;
+
+  transition: color .35s;
 }
 
 .info-card p {
-  color: #6b7280;
-  margin: 3px 0;
+  margin: 0;
+
+  color: var(--text-light);
+
+  line-height: 1.7;
+
+  transition: color .35s;
 }
 
+/* =======================
+   Form
+======================= */
+
 .contact-form {
-  background: white;
+  background: var(--surface);
 
-  padding: 40px;
+  border: 1px solid var(--border);
 
-  border-radius: 22px;
+  border-radius: 20px;
 
-  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+  padding: 36px;
+
+  box-shadow: var(--shadow);
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   gap: 24px;
+
+  transition:
+    background .35s,
+    border-color .35s,
+    box-shadow .35s;
 }
 
 .form-group {
@@ -90,102 +120,127 @@
   grid-column: 1 / -1;
 }
 
-label {
-  margin-bottom: 10px;
+.form-group label {
+  margin-bottom: 8px;
+
+  color: var(--text);
 
   font-weight: 600;
 
-  color: #374151;
+  transition: color .35s;
 }
 
-input,
-textarea {
+.form-group input,
+.form-group textarea {
+
   width: 100%;
 
-  padding: 16px 18px;
+  padding: 14px 16px;
 
-  border-radius: 12px;
+  border-radius: 10px;
 
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border);
 
-  outline: none;
+  background: var(--bg);
+
+  color: var(--text);
 
   font-size: 16px;
 
-  transition: .25s;
+  outline: none;
+
+  transition:
+    background .35s,
+    color .35s,
+    border-color .3s,
+    box-shadow .3s;
 }
 
-textarea {
+.form-group textarea {
   resize: vertical;
+  min-height: 160px;
 }
 
-input:focus,
-textarea:focus {
-  border-color: #0057b8;
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-light);
+}
 
-  box-shadow: 0 0 0 4px rgba(0,87,184,.12);
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(0, 87, 184, .12);
 }
 
 small {
   margin-top: 8px;
-  color: #dc2626;
+
+  color: #ef4444;
+
+  font-size: 13px;
 }
 
 .contact-form button {
   grid-column: 1 / -1;
-
   justify-self: start;
-
-  cursor: pointer;
 }
 
-.contact-form .btn {
-  padding: 16px 36px;
-  font-size: 17px;
+/* =======================
+   Dark mode
+======================= */
+
+body.dark .info-card:hover,
+body.dark .contact-form:hover {
+  border-color: var(--primary);
 }
 
-.contact-form .btn:hover {
-  transform: translateY(-4px);
-
-  box-shadow: 0 15px 35px rgba(0,87,184,.25);
+body.dark .form-group input,
+body.dark .form-group textarea {
+  background: var(--surface-alt);
 }
+
+/* =======================
+   Responsive
+======================= */
 
 @media (max-width: 992px) {
 
+  .contact {
+    padding: 90px 0;
+  }
+
   .contact-wrapper {
-
     grid-template-columns: 1fr;
-
+    gap: 40px;
   }
 
 }
 
 @media (max-width: 768px) {
 
-  .contact {
-    padding: 80px 0;
-  }
-
   .contact-form {
-
     grid-template-columns: 1fr;
-
     padding: 28px;
-
   }
 
   .full-width {
-
     grid-column: auto;
-
   }
 
-  .contact-form button {
+}
 
-    width: 100%;
+@media (max-width: 576px) {
 
-    justify-self: stretch;
+  .contact {
+    padding: 70px 0;
+  }
 
+  .info-card {
+    padding: 20px;
+  }
+
+  .contact-form {
+    padding: 24px;
   }
 
 }

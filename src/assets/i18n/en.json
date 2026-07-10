@@ -96,26 +96,25 @@
     "description": "We use industry-leading technologies to build secure, scalable and high-performance software."
   },
   "projects": {
-    "sectionTag": "НАШИ ПРОЕКТЫ",
-    "title": "Реализованные решения",
-    "description": "От корпоративных систем до AI-приложений — мы создаём программное обеспечение, которое решает реальные бизнес-задачи.",
+    "sectionTag": "OUR PROJECTS",
+    "title": "Implemented Solutions",
+    "description": "From enterprise systems to AI applications, we create software that solves real business problems.",
 
     "enterprise": {
-      "category": "Корпоративное ПО",
-      "title": "Платформа управления предприятием",
-      "description": "ERP-система для автоматизации внутренних процессов и повышения эффективности бизнеса."
+      "category": "Enterprise Software",
+      "title": "Enterprise Management Platform",
+      "description": "ERP system for automating internal processes and improving business efficiency."
     },
 
     "ai": {
-      "category": "Искусственный интеллект",
-      "title": "AI-помощник для клиентов",
-      "description": "Интеллектуальный чат-бот на базе больших языковых моделей, сокративший нагрузку на службу поддержки на 60%."
-    },
+      "category": "Artificial Intelligence",
+      "title": "AI Assistant for Customers",
+      "description": "An intelligent chatbot based on large language models that reduced the workload of the support service by 60%." },
 
     "cloud": {
-      "category": "Миграция в облако",
-      "title": "Модернизация облачной инфраструктуры",
-      "description": "Перенос устаревшей инфраструктуры в AWS с автоматизированными CI/CD-процессами."
+      "category": "Cloud Migration",
+      "title": "Cloud Infrastructure Modernization",
+      "description": "Migrating legacy infrastructure to AWS with automated CI/CD processes."
     }
   },
   "footer": {

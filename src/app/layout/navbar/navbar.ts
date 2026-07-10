@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 import { LanguageSwitcher } from '../language-switcher/language-switcher';
+import { ThemeService } from '../../core/services/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -15,18 +16,16 @@ import { LanguageSwitcher } from '../language-switcher/language-switcher';
 })
 export class Navbar {
 
+  theme = inject(ThemeService);
+
   scrollTo(id: string): void {
 
     const element = document.getElementById(id);
 
-    if (!element) {
-      return;
-    }
-
-    const offset = 80;
+    if (!element) return;
 
     window.scrollTo({
-      top: element.offsetTop - offset,
+      top: element.offsetTop - 80,
       behavior: 'smooth'
     });
 

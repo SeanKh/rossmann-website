@@ -1,6 +1,7 @@
 .services {
   padding: 120px 0;
-  background: #ffffff;
+  background: var(--bg);
+  transition: background .35s;
 }
 
 .services-grid {
@@ -11,32 +12,46 @@
 }
 
 .service-card {
-  background: #fff;
+  background: var(--surface);
   padding: 40px 32px;
   border-radius: 20px;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
-  transition: all .3s ease;
-  border: 1px solid #eef2f7;
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+
   position: relative;
   overflow: hidden;
+
+  transition:
+    transform .3s,
+    background .35s,
+    border-color .35s,
+    box-shadow .35s;
 }
 
 .service-card::before {
   content: "";
+
   position: absolute;
+
   left: 0;
   top: 0;
+
   width: 5px;
   height: 100%;
-  background: #0057b8;
+
+  background: var(--primary);
+
   transform: scaleY(0);
   transform-origin: top;
+
   transition: transform .3s ease;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 18px 45px rgba(0, 87, 184, 0.15);
+  box-shadow: 0 18px 45px rgba(0, 87, 184, .15);
 }
 
 .service-card:hover::before {
@@ -46,9 +61,12 @@
 .icon {
   width: 70px;
   height: 70px;
+
   border-radius: 18px;
-  background: #eef6ff;
-  color: #0057b8;
+
+  background: var(--tag-bg);
+  color: var(--primary);
+
   font-size: 34px;
 
   display: flex;
@@ -56,26 +74,43 @@
   justify-content: center;
 
   margin-bottom: 24px;
-  transition: all .3s ease;
+
+  transition:
+    background .35s,
+    color .35s,
+    transform .3s;
 }
 
 .service-card:hover .icon {
-  background: #0057b8;
-  color: #fff;
+  background: var(--primary);
+  color: white;
   transform: rotate(-8deg) scale(1.08);
 }
 
 .service-card h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #111827;
+
+  color: var(--text);
+
   margin-bottom: 16px;
+
+  transition: color .35s;
 }
 
 .service-card p {
-  color: #6b7280;
+  color: var(--text-light);
+
   line-height: 1.8;
   font-size: 16px;
+
+  transition: color .35s;
+}
+
+/* Dark mode enhancement */
+
+body.dark .service-card:hover {
+  border-color: var(--primary);
 }
 
 @media (max-width: 992px) {

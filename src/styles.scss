@@ -11,6 +11,46 @@
 @use "styles/components/cards";
 @use "styles/base/utilities";
 
+:root {
+
+  --primary: #0057b8;
+  --primary-hover: #00469a;
+
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-alt: #f8fbff;
+
+  --text: #111827;
+  --text-light: #6b7280;
+
+  --border: #e5e7eb;
+
+  --shadow: 0 12px 30px rgba(0,0,0,.08);
+
+  --tag-bg: #eaf3ff;
+
+}
+
+body.dark {
+
+  --primary: #60a5fa;
+  --primary-hover: #3b82f6;
+
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-alt: #111827;
+
+  --text: #f9fafb;
+  --text-light: #cbd5e1;
+
+  --border: #334155;
+
+  --shadow: 0 14px 40px rgba(0,0,0,.45);
+
+  --tag-bg: rgba(96,165,250,.12);
+
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,15 +74,16 @@ html {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   font-family: Inter, Arial, sans-serif;
-  color: #111827;
-  background: #fff;
+
+  background: var(--bg);
+  color: var(--text);
+
+  transition:
+    background .35s,
+    color .35s;
 }
 
 /* ===========================
@@ -70,7 +111,7 @@ section {
 
 .section-tag {
   display: inline-block;
-  color: #0057b8;
+  color: var(--primary);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -84,7 +125,7 @@ section {
 }
 
 .section-header p {
-  color: #6b7280;
+  color: var(--text-light);
   font-size: 18px;
   line-height: 1.8;
 }
@@ -97,8 +138,8 @@ section {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 999px;
-  background: #eaf3ff;
-  color: #0057b8;
+  background: var(--tag-bg);
+  color: var(--primary);
   font-weight: 600;
 }
 
@@ -125,24 +166,24 @@ section {
 }
 
 .btn-primary {
-  background: #0057b8;
+  background: var(--primary);
   color: white;
   border: none;
 }
 
 .btn-primary:hover {
-  background: #00469a;
+  background: var(--primary-hover);
   transform: translateY(-4px);
 }
 
 .btn-outline {
-  border: 2px solid #0057b8;
-  color: #0057b8;
-  background: white;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: var(--surface);
 }
 
 .btn-outline:hover {
-  background: #0057b8;
+  background: var(--primary);
   color: white;
   transform: translateY(-4px);
 }
@@ -152,11 +193,16 @@ section {
 =========================== */
 
 .card {
-  background: white;
+  background:var(--surface);
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.08);
-  transition: .3s;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  transition:
+      transform .3s,
+      background .3s,
+      border-color .3s,
+      box-shadow .3s;
 }
 
 .card:hover {

@@ -1,6 +1,7 @@
 .technologies {
   padding: 120px 0;
-  background: white;
+  background: var(--bg);
+  transition: background .35s;
 }
 
 .tech-grid {
@@ -12,17 +13,23 @@
 }
 
 .tech-card {
-  background: #fff;
-  border: 1px solid #eef2f7;
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
   border-radius: 18px;
 
   padding: 35px 20px;
 
   text-align: center;
 
-  transition: all .3s ease;
+  box-shadow: var(--shadow);
 
-  box-shadow: 0 10px 25px rgba(0,0,0,.05);
+  transition:
+    transform .3s,
+    background .35s,
+    border-color .35s,
+    box-shadow .35s;
 }
 
 .tech-card:hover {
@@ -33,20 +40,50 @@
 .tech-card img {
   width: 64px;
   height: 64px;
+
   object-fit: contain;
+
   margin-bottom: 20px;
+
+  transition:
+    transform .3s,
+    filter .35s;
+}
+
+.tech-card:hover img {
+  transform: scale(1.08);
 }
 
 .tech-card span {
   display: block;
+
   font-weight: 600;
-  color: #111827;
+
+  color: var(--text);
+
+  transition: color .35s;
+}
+
+/* Dark mode improvements */
+
+body.dark .tech-card:hover {
+  border-color: var(--primary);
+}
+
+body.dark .tech-card img {
+  filter:
+    brightness(1.08)
+    contrast(1.08);
 }
 
 @media (max-width: 1000px) {
 
+  .technologies {
+    padding: 90px 0;
+  }
+
   .tech-grid {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
 }
@@ -54,12 +91,16 @@
 @media (max-width: 768px) {
 
   .tech-grid {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
 
 @media (max-width: 480px) {
+
+  .technologies {
+    padding: 70px 0;
+  }
 
   .tech-grid {
     grid-template-columns: 1fr;

@@ -11,7 +11,9 @@ export class ThemeService {
 
     const saved = localStorage.getItem('theme');
 
-    if (saved === 'dark') {
+    if (saved === 'light') {
+      this.enableLight();
+    } else {
       this.enableDark();
     }
 

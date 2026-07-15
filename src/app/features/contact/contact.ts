@@ -5,6 +5,8 @@ import {
   Validators
 } from '@angular/forms';
 
+import { HttpClient } from '@angular/common/http';
+
 import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
@@ -21,9 +23,12 @@ export class Contact {
 
   private fb = inject(FormBuilder);
 
+  private http = inject(HttpClient);
+
   submitted = false;
 
   contactForm = this.fb.group({
+
     name: ['', Validators.required],
 
     email: [
@@ -45,6 +50,7 @@ export class Contact {
         Validators.minLength(10)
       ]
     ]
+
   });
 
   submit(): void {
@@ -55,13 +61,29 @@ export class Contact {
       return;
     }
 
-    console.log(this.contactForm.value);
+    this.http.post('/send-mail.php', this.contactForm.value)
+      .subscribe({
 
-    alert('Message sent successfully!');
+        next: () => {
 
-    this.contactForm.reset();
+          alert('Message sent successfully!');
 
-    this.submitted = false;
+          this.contactForm.reset();
+
+          this.submitted = false;
+
+        },
+
+        error: (err) => {
+
+          console.error(err);
+
+          alert('Failed to send message.');
+
+        }
+
+      });
+
   }
 
 }
